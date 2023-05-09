@@ -1,6 +1,12 @@
 {
     "collections": [
         {
+            "id": "SENTINEL2_L2A",
+            "title": "Sentinel-2 Top of Canopy (TOC)",
+            "description": "[Sentinel-2 Level 2A](https://docs.terrascope.be/#/DataProducts/Sentinel-2/Level2A/Level2A) product, processed from L1C by Sen2Cor. \n Use the [Terrascope viewer](https://viewer.terrascope.be/?language=nl&bbox=0.9339867511378304,50.14520994379217,6.207424251137831,51.77292299745045&overlay=false&bgLayer=MapBox&date=2019-02-25T03:17:15.000Z&layer=CGS_S2_RADIOMETRY) to explore the data. \n\n  This processing level corrects for atmospheric effects to provide a more accurate representation of the surface reflectance. Sentinel-2 TOC data can be valuable for applications such as land cover classification, vegetation monitoring, and urban planning.\n\n",
+            "mission": "Sentinel-2",
+            "gsd": 10,
+            "type": "ARD",
             "assets": {
                 "thumbnail": {
                     "href": "https://www.esa.int/var/esa/storage/images/esa_multimedia/images/2022/07/tallinn_estonia/24383281-1-eng-GB/Tallinn_Estonia_pillars.jpg",
@@ -174,8 +180,6 @@
                     "type": "spatial"
                 }
             },
-            "description": "[Sentinel-2 Level 2A](https://docs.terrascope.be/#/DataProducts/Sentinel-2/Level2A/Level2A) product, processed from L1C by Sen2Cor. \n Use the [Terrascope viewer](https://viewer.terrascope.be/?language=nl&bbox=0.9339867511378304,50.14520994379217,6.207424251137831,51.77292299745045&overlay=false&bgLayer=MapBox&date=2019-02-25T03:17:15.000Z&layer=CGS_S2_RADIOMETRY) to explore the data. \n\n  This processing level corrects for atmospheric effects to provide a more accurate representation of the surface reflectance. Sentinel-2 TOC data can be valuable for applications such as land cover classification, vegetation monitoring, and urban planning.\n\n",
-            "id": "SENTINEL2_L2A",
             "license": "proprietary",
             "keywords": [
                 "VITO",
@@ -374,6 +378,7 @@
                         "aliases": [
                             "TOC-B01_60M"
                         ],
+                        "center_wavelength": 0.4427,
                         "common_name": "coastal aerosol",
                         "gsd": 60,
                         "name": "B01",
@@ -429,6 +434,7 @@
                         "aliases": [
                             "TOC-B05_20M"
                         ],
+                        "center_wavelength": 0.7041,
                         "common_name": "rededge",
                         "gsd": 20,
                         "name": "B05",
@@ -442,6 +448,7 @@
                         "aliases": [
                             "TOC-B06_20M"
                         ],
+                        "center_wavelength": 0.7405,
                         "common_name": "rededge",
                         "gsd": 20,
                         "name": "B06",
@@ -455,6 +462,7 @@
                         "aliases": [
                             "TOC-B07_20M"
                         ],
+                        "center_wavelength": 0.7828,
                         "common_name": "rededge",
                         "gsd": 20,
                         "name": "B07",
@@ -482,6 +490,7 @@
                         "aliases": [
                             "TOC-B8A_20M"
                         ],
+                        "center_wavelength": 0.8647,
                         "gsd": 20,
                         "name": "B8A",
                         "offset": 0,
@@ -494,6 +503,7 @@
                         "aliases": [
                             "TOC-B11_20M"
                         ],
+                        "center_wavelength": 1.6137,
                         "common_name": "swir",
                         "gsd": 20,
                         "name": "B11",
@@ -507,6 +517,7 @@
                         "aliases": [
                             "TOC-B12_20M"
                         ],
+                        "center_wavelength": 2.2024,
                         "common_name": "swir",
                         "gsd": 20,
                         "name": "B12",
@@ -745,11 +756,7 @@
                     "Sentinel-2A",
                     "Sentinel-2B"
                 ]
-            },
-            "title": "Sentinel-2 Top of Canopy (TOC)",
-            "mission": "Sentinel-2",
-            "gsd": 10,
-            "type": "ARD"
+            }
         },
         {
             "id": "SENTINEL2_L1C",
